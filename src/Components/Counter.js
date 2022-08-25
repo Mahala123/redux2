@@ -13,6 +13,14 @@ function Counter() {
         {
           dispatch({type:'decrement',amount:2})
         }
+        const incrementBy5=()=>
+        {
+          dispatch({type:'increment',amount:5})
+        }
+        const decrementBy5=()=>
+        {
+          dispatch({type:'decrement',amount:5})
+        }
     
   return (
     <div className='counter'>
@@ -25,6 +33,11 @@ function Counter() {
        IncrementBy 2
       </button><button onClick={decrementBy1}>
        DecrementBy 2
+      </button>
+      <button onClick={incrementBy5}>
+       IncrementBy 5
+      </button><button onClick={decrementBy5}>
+       DecrementBy 5
       </button>
       </div>
     </div>
